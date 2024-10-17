@@ -1,0 +1,219 @@
+body{
+    background-color: #121212;
+  
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    background-color: #121212;
+    color: white;
+    border-color: white;
+}
+
+/* h2{
+    text-align: center;
+} */
+#icon{
+    display: block;
+
+    height: auto;
+}
+
+/* #icon2{
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+#top{
+    display: block;
+    width: 30px;
+    height: auto;
+    top: 15px;
+    left: 20px;
+} */
+
+#top {
+    margin-bottom: 20px;
+  }
+  
+.player{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+    background-image: linear-gradient(#121212, rgb(0, 0, 0));
+    display: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+} 
+
+
+
+#drag-container{
+    width: 250px;
+    height: 30px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#drag{
+    width: 99%;
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.555);
+    border-radius: 20px;
+    margin: auto;
+}
+
+
+#artContainer{
+    padding-top: 50px;
+    width: 200px;
+    margin: auto;
+}
+#albumArt{
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+#song-info{
+    padding-top: 20px;
+    width: 70%;
+    margin: auto;
+}
+#song-name{
+    font-size: 150%;
+}
+#song-artist{
+    color: rgb(154, 152, 152);
+}
+#song-name,
+#song-artist {
+    display: inline-block; /* or inline-block */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; /* Ensure this matches the parent width */
+}
+h6{
+    text-align: center;
+    color: rgb(194, 184, 184);
+}
+  #icon2 {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle; /* Aligns the icon vertically */
+    margin-right: 10px; /* Optional: add space between the icon and the heading */
+  }
+  
+h2 {
+    display: inline-block;
+    font-size: inherit; /* Reset font size for h2 */
+    vertical-align: bottom; /* Aligns the heading vertically */
+  }
+#root{
+    width: 80%;
+    padding-top: 20px;
+    margin: auto;
+
+}
+
+.audio_controls{
+    width: 250px;
+    margin: auto;
+}
+
+#shuffle-button, #prev-button, #play-pause-button,
+#next-button, #loop-button{
+    background-color: transparent;
+    color:rgb(212, 4, 133);
+    border-style: none;
+    padding: 10px;
+    font-size: x-large;
+}
+
+#play-pause-button{
+    font-size: xx-large;
+}
+
+#bottom_player{
+    position: fixed;
+    bottom: 10px;
+    left: auto;
+    right: auto;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(142, 121, 121);
+    border-radius: 20px;
+
+}
+
+#bottom-art{
+    width: 30px;
+    margin-right: 10px;
+}
+
+#bottom-name{
+    display: inline-block; /* or inline-block */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%; /* Ensure this matches the parent width */
+}
+#queue-name, #queue-artist{
+    display: inline-block; /* or inline-block */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%; /* Ensure this matches the parent width */
+}
+
+#logout{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    border-style: none;
+    background-color: transparent;
+    color: white;
+}
+
+#swipeSection{
+    background-color: #0e0e0e;
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 20px;
+    width: 90%;
+    height: 25%;
+    margin: auto;
+    bottom: 10px;
+}
+#dis{
+    width: 200px;
+    margin: auto;
+    margin-top: 40px;
+    color: rgb(74, 73, 73);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.card{
+    border-color: transparent;
+}
+#queue{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #121212;
+    border: 1px solid grey;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 90%;
+    box-shadow: #0e0e0e;
+    padding: 10px;
+    display: none;
+    overflow: scroll;
+}
